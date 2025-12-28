@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upside Down adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <!-- Game Canvas -->
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- UI -->
+        <div id="ui-layer">
+            <div id="health-display" class="hearts">❤️❤️❤️</div>
+            <div id="score-display" class="score">Score: 0</div>
+        </div>
+
+        <!-- Ambience -->
+        <div class="vignette"></div>
+        <div class="scanlines"></div>
+        <div class="grain"></div>
+
+        <!-- Screens -->
+        <div id="start-screen">
+            <h1>Stranger<br>Things</h1>
+            <p>Escape the Upside Down<br>Use Arrow Keys to Move</p>
+            <button id="start-btn">Start Run</button>
+        </div>
+
+        <div id="game-over-screen" class="hidden">
+            <h1>CAUGHT</h1>
+            <p>Vecna got you.</p>
+            <p id="final-score">Score: 0</p>
+            <button id="restart-btn">Try Again</button>
+        </div>
+    </div>
+
+    <script src="js/game.js" defer></script>
+</body>
+
+</html>
